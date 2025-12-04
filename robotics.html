@@ -2,46 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Robotics | Wafi</title>
+  <title>Robotics | Wafi Sharif</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Collapsible season box styles */
+    .season {
+      background-color: #2a2a2a;
+      border: 1px solid #444;
+      border-radius: 8px;
+      margin-top: 1.5rem;
+      padding: 1rem;
+    }
+
+    .season h3 {
+      cursor: pointer;
+      margin: 0;
+      font-size: 1.4rem;
+      color: #70b7ff;
+      transition: 0.2s;
+    }
+
+    .season h3:hover {
+      color: white;
+    }
+
+    .season-content {
+      display: none;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-  <h1>FTC Robotics — DECODE Team</h1>
+  <h1>Robotics</h1>
+  <p>FTC Engineering, CAD, Prototyping, & Mechanical Development</p>
 </header>
 
 <nav class="navbar">
   <a href="index.html">Home</a>
   <a href="research.html">Research</a>
-  <a href="simulators.html">Simulators</a>
   <a href="maker.html">Maker Portfolio</a>
   <a href="robotics.html">Robotics</a>
+  <a href="simulators.html">Simulators</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <div class="container">
-  <h2>Robot Description</h2>
-  <p>
-    Below is a showcase of my FTC robot for the current season, including mechanical subsystems, 
-    CAD work, wiring layout, prototyping stages, and final assembly.  
-    Photos and detailed subsystem descriptions can be added as you document your build process.
-  </p>
 
-  <h2>Robot Gallery</h2>
-  <div class="gallery">
-    <!-- HOW TO ADD IMAGES -->
-    <!-- Example:
-         <img src="robotics/robot1.jpg" alt="Robot Front View">
-         <img src="robotics/robot2.jpg" alt="Intake System">
-         <img src="robotics/robot3.jpg" alt="Lift Mechanism">
-    -->
+  <h2>FTC Robotics Seasons</h2>
+  <p>Select a season below to view robot photos, subsystem breakdowns, and project details.</p>
+
+  <!-- ⭐ Season 2025 -->
+  <div class="season">
+    <h3 onclick="toggleSeason('s2025')">2025 — DECODE Robotics (INTO THE DEEP)</h3>
+    <div class="season-content" id="s2025">
+
+      <h4>Robot Gallery</h4>
+      <p>Upload your images to: <strong>/robotics/2025/</strong></p>
+
+      <div class="gallery">
+        <!-- ADD YOUR IMAGES LIKE THIS -->
+        <!-- <img src="robotics/2025/robot_front.jpg" alt="Robot Front View"> -->
+        <!-- <img src="robotics/2025/intake.jpg" alt="Intake System"> -->
+        <!-- <img src="robotics/2025/lift.jpg" alt="Lift Mechanism"> -->
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ⭐ Add more seasons as needed -->
+  <div class="season">
+    <h3 onclick="toggleSeason('s2024')">2024 — DECODE Robotics (CENTERSTAGE)</h3>
+    <div class="season-content" id="s2024">
+
+      <h4>Robot Gallery</h4>
+      <p>Upload your images to: <strong>/robotics/2024/</strong></p>
+
+      <div class="gallery">
+        <!-- <img src="robotics/2024/robot_front.jpg" alt="Robot Front View"> -->
+        <!-- <img src="robotics/2024/claw.jpg" alt="Claw System"> -->
+        <!-- <img src="robotics/2024/arm.jpg" alt="Arm System"> -->
+      </div>
+
+    </div>
   </div>
 
 </div>
 
-<footer>© 2025 Wafi</footer>
+<footer>© 2025 Wafi Sharif</footer>
+
+<script>
+  function toggleSeason(id) {
+    const el = document.getElementById(id);
+    el.style.display = (el.style.display === "block") ? "none" : "block";
+  }
+</script>
 
 </body>
 </html>
