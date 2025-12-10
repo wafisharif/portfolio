@@ -168,3 +168,13 @@ header .welcome {
   line-height: 1.55;
   opacity: 0.95;
 }
+
+.highlight-box {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 0 8px rgba(0,0,0,0.35);
+}
+
