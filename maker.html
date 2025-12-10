@@ -44,6 +44,41 @@
     <img src="smart%20desk%20assistant/IMG_5880.jpg" alt="">
   </div>
 
+  <h2>Development Notes & Features</h2>
+
+<p class="section-description">
+  Below is a summary of the major engineering updates I implemented while iterating on the Smart Desk 
+  Assistant. Each subsystem has been refined to improve robustness, responsiveness, and real-world usability.
+</p>
+
+<h3>Enhanced Lighting Detection</h3>
+<p class="section-description">
+  The LED indicator system now uses external digital LEDs on the breadboard instead of the Arduino’s 
+  built-in LED. This provides stronger brightness and a more consistent signal. A hysteresis-based 
+  threshold was added to prevent flickering and ensure stable low-light detection.
+</p>
+
+<h3>Ultrasonic Presence Tracking</h3>
+<p class="section-description">
+  The ultrasonic module now includes a dual-threshold hysteresis buffer, allowing the assistant to reliably 
+  distinguish between a user and background objects such as a chair. This prevents false triggers when I 
+  lean back, shift position, or temporarily move out-of-range.
+</p>
+
+<h3>Closed-Loop Cooling System</h3>
+<p class="section-description">
+  A PN2222 transistor controls a small DC cooling fan, creating a closed-loop temperature regulation system. 
+  When the workspace temperature rises above 27°C and I am present at the desk, the fan automatically 
+  activates to maintain a comfortable environment.
+</p>
+
+<h3>Productivity Timer Integration</h3>
+<p class="section-description">
+  Three physical buttons—pause, reset, and skip—were wired into the system to support full control over 
+  a productivity session timer. The LCD display dynamically updates the timer status and no longer shows 
+  drifting or unstable behavior after pauses or resets.
+</p>
+
 </div>
 
 <footer>© 2025 Wafi Sharif</footer>
