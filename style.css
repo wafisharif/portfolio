@@ -156,3 +156,15 @@ header .welcome {
   display: inline-block;
   color: #e6e6e6;
 }
+
+.section-description {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #d0d0d0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+  opacity: 0.95;
+}
